@@ -73,9 +73,9 @@ Vamos a editar el cerebro de Samba con  una configuración limpia y segura.
     
 3. **Vamos al final del archivo y añadimos esto (explicado después de la captura):**
 
-`# Configuración específica para Climair S.L.
+`# Configuración específica para Climair S.L.`
 
-[Facturacion_Climair]
+`[Facturacion_Climair]
    comment = Carpeta de Contabilidad y Facturas
    path = /srv/climair/facturacion
    browseable = yes
@@ -83,9 +83,9 @@ Vamos a editar el cerebro de Samba con  una configuración limpia y segura.
    guest ok = no
    valid users = @administracion
    create mask = 0770
-   directory mask = 0770
+   directory mask = 0770`
 
-[Partes_Climair]
+`[Partes_Climair]
    comment = Registro de instalaciones y mantenimiento
    path = /srv/climair/partes_trabajo
    browseable = yes
@@ -93,7 +93,7 @@ Vamos a editar el cerebro de Samba con  una configuración limpia y segura.
    guest ok = no
    valid users = @administracion, @tecnicos
    create mask = 0770
-   directory mask = 0770`
+   directory mask = 0770 `
 
 Una vez que hayas pegado o escrito ese texto al final del archivo `/etc/samba/smb.conf`:
 
