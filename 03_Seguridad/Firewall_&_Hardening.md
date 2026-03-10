@@ -73,7 +73,6 @@ Reduce el tiempo de espera para un login exitoso (evita DoS).
 Lista blanca: solo este usuario tiene permiso de entrada.
 Aplicación de cambios:
 `sudo nano /etc/ssh/sshd_config`
-# [Modificar o añadir las líneas mencionadas arriba]
 ### 3. Verificación de sintaxis
 Antes de reiniciar el servicio (lo que podría dejarnos fuera del servidor si hay un error), validamos el archivo:
 `sudo sshd -t`
