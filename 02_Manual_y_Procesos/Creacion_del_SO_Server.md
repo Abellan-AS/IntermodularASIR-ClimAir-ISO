@@ -1,3 +1,5 @@
+<img width="2048" height="1365" alt="image" src="https://github.com/user-attachments/assets/46232859-80c3-44f5-b0a4-f794577577e5" />
+
 # Proyecto Intermodular: ClimAir S.L. — Implantación de Sistemas Operativos (ISO)
 
 <aside>
