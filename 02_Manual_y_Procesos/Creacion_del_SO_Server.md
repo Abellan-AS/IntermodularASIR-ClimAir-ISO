@@ -22,7 +22,13 @@ Además nos servirá para después enlazar con los proyectos de las demás asign
 <aside>
 🧭
 
-# **Índice interactivo**
+# **Índice**
+## A. Creación de la Máquina Virtual
+## B. Configuración de Red
+## C. Instalación de Ubuntu Server
+## D. Comprobación básica tras instalación
+
+---
 
 </aside>
 
