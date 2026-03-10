@@ -1,0 +1,50 @@
+Markdown# 🛡️ Proyecto Intermodular: ClimAir S.L.
+## Memoria de Implantación de Sistemas Operativos (ISO)
+**Responsable:** Alejandro Sánchez Abellán  
+**Curso:** 2025-2026
+
+---
+
+## 💾 Automatización de Copias de Seguridad (Backup)
+
+Tras asegurar el perímetro y la segmentación de red, procedemos a implementar una política de **Disponibilidad** y **Recuperación ante Desastres**. Para ClimAir S.L., hemos diseñado una solución de backup automatizada que optimiza el espacio en disco mediante rotación cíclica de 7 días.
+
+### 📊 Flujo del Proceso de Backup
+
+
+---
+
+### 1. Preparación del Entorno
+Utilizando las ventajas de **LVM (Logical Volume Manager)** previamente configurado, creamos un punto de montaje dedicado para las salvas de seguridad para evitar que un llenado del backup bloquee el sistema de archivos raíz (`/`).
+
+```bash
+sudo mkdir -p /srv/backups
+2. Desarrollo del Script de AutomatizaciónEl script realiza la compresión en caliente de la carpeta de facturación y aplica una política de retención.Archivo: /usr/local/bin/backup_climair.shBash#!/bin/bash
+# ------------------------------------------------------------------
+# Script de Backup para Climair SVR
+# Autor: Alejandro Sánchez Abellán
+# Objetivo: Comprimir facturación y rotar logs/archivos cada 7 días.
+# ------------------------------------------------------------------
+
+# Variables Globales
+FECHA=$(date +%Y-%m-%d_%H%M)
+DESTINO="/srv/backups"
+ORIGEN="/srv/climair/facturacion"
+LOG="/var/log/backup_climair.log"
+
+echo "[$(date)] --- Iniciando copia de seguridad de Climair ---" >> $LOG
+
+# 1. Compresión mediante TAR con algoritmo Gzip
+# -c: Create, -z: Gzip, -f: File
+tar -czf $DESTINO/backup_facturas_$FECHA.tar.gz $ORIGEN >> $LOG 2>&1
+
+# 2. Mantenimiento y Rotación (Clean-up)
+# Busca archivos .tar.gz modificados hace más de 7 días y los elimina
+find $DESTINO -type f -mtime +7 -name "*.tar.gz" -delete >> $LOG 2>&1
+
+echo "[$(date)] --- Backup finalizado con éxito en $DESTINO ---" >> $LOG
+3. Permisos y DesplieguePara que el sistema pueda ejecutar el script, debemos asignar privilegios de ejecución:Bashsudo chmod +x /usr/local/bin/backup_climair.sh
+Verificación manual:Bashsudo /usr/local/bin/backup_climair.sh
+ls -lh /srv/backups
+4. Orquestación con Cron (Planificación)Para cumplir con los estándares de administración profesional, automatizamos la tarea mediante el demonio Cron en el contexto de root.Configuración del Crontab:Ejecutamos sudo crontab -e e insertamos la siguiente línea al final:Fragmento de código00 03 * * * /usr/local/bin/backup_climair.sh > /dev/null 2>&1
+CampoValorDescripciónMinuto00Ejecución al inicio de la hora.Hora03Las 3:00 AM (ventana de baja actividad).Día/Mes/Semana* * *Todos los días del año.Comando[Ruta]Ejecución del binario y redirección de errores.🔍 Análisis Técnico del ScriptShebang (#!/bin/bash): Define el intérprete de comandos necesario para la ejecución del script.Gestión de Variables: El uso de $FECHA garantiza la No Repudiación y evita la sobrescritura de datos, permitiendo Point-in-Time Recovery (PITR).Comando tar -czf:c: Crea un nuevo archivo.z: Filtra el archivo a través de gzip para ahorrar espacio (crítico en entornos ASIR).f: Especifica el nombre del archivo resultante.Lógica de Purga (find ... -delete): Implementa una política de retención basada en el tiempo de modificación (-mtime +7), esencial para evitar la denegación de servicio por llenado de disco (DoS involuntario).Redirección de Logs (2>&1): Técnica de administración avanzada para capturar tanto la salida estándar (stdout) como los errores (stderr) en un único registro de auditoría.
