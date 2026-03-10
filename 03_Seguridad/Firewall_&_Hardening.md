@@ -40,8 +40,7 @@ El Firewall es la primera línea de defensa. Implementamos una política de **"D
 
 ### 1. Comprobar el estado actual
 Antes de configurar, verificamos que no existan reglas previas que causen conflictos:
-```bash
-sudo ufw status
+`sudo ufw status`
 
 2. Permitir solo lo necesarioDefinimos las excepciones para los servicios configurados en las fases anteriores:Bash# Acceso remoto administrativo
 sudo ufw allow ssh
