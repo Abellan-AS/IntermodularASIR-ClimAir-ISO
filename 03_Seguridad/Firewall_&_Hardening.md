@@ -1,8 +1,17 @@
-# 🛡️ Proyecto Intermodular: ClimAir S.L.
-## Memoria de Implantación de Sistemas Operativos (ISO)
+# Proyecto Intermodular: ClimAir S.L. — Implantación de Sistemas Operativos (ISO)
 
-**Responsable:** Alejandro Sánchez Abellán  
-**Curso:** 2025-2026
+<aside>
+📌
+
+***PROYECTO INTERMODULAR: ClimAir S.L.***
+
+*Implantación de Sistemas Operativos (ISO)*
+
+***Responsable:** Alejandro Sánchez Abellán*
+
+*2025-2026*
+
+</aside>
 
 ---
 
