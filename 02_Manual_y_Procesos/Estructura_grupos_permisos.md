@@ -16,9 +16,24 @@
 ---
 
 <aside>
-🧭
+> # 🧭 Índice interactivo
 
-**Índice interactivo**
+**[A. Estructura de carpetas de la empresa](#a-estructura-de-carpetas-de-la-empresa)**
+
+**[B. Creación de grupos y usuarios](#b-creación-de-grupos-y-usuarios)**
+
+1.  **[1. Crear los grupos operativos:](#1-crear-los-grupos-operativos)**
+2.  **[2. Creamos los usuarios (Ana y Pepe):](#2-creamos-los-usuarios-ana-y-pepe)**
+3.  **[3. Asignamos contraseñas:](#3-asignamos-contraseñas)**
+4.  **[4. Metemos a cada uno en su grupo:](#4-metemos-a-cada-uno-en-su-grupo)**
+
+**[C. Configuración de permisos](#c-configuración-de-permisos)**
+
+1.  **[1. Cambiar el propietario y el grupo:](#1-cambiar-el-propietario-y-el-grupo)**
+2.  **[2. Establecer los permisos:](#2-establecer-los-permisos)**
+3.  **[3. Verificación Final](#3-verificación-final)**
+
+---
 
 </aside>
 
