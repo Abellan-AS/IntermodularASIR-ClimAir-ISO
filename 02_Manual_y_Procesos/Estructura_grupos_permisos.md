@@ -15,7 +15,6 @@
 
 ---
 
-<aside>
 > # 🧭 Índice interactivo
 
 **[A. Estructura de carpetas de la empresa](#a-estructura-de-carpetas-de-la-empresa)**
@@ -35,7 +34,7 @@
 
 ---
 
-</aside>
+
 
 ---
 
