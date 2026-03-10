@@ -53,7 +53,8 @@ Captura de pantalla (VirtualBox)
 
 </aside>
 
-![Captura de pantalla 2026-03-10 104145.png](attachment:9ed84bcb-31f0-4f7a-837c-96f6b0b9f1ef:Captura_de_pantalla_2026-03-10_104145.png)
+<img width="833" height="912" alt="image" src="https://github.com/user-attachments/assets/bca167a6-b295-41a2-9e49-eb1e5abd8f5b" />
+
 
 ---
 
