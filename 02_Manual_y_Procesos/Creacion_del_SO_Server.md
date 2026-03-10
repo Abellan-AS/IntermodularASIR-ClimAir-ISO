@@ -20,8 +20,6 @@ Además nos servirá para después enlazar con los proyectos de las demás asign
 ---
 
 
-
-> [!IMPORTANT]
 > # 🧭 Índice interactivo
 
 ### Índice interactivo
