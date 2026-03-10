@@ -24,8 +24,6 @@ Como ya tenemos los directorios creados, nos ponemos manos a la obra con la inst
 <aside>
 > # 🧭 Indice interactivo
 
-### <u>Índice interactivo</u>
-
 1.  **[1. Instalación del Servicio Samba](#1-instalación-del-servicio-samba)**
     * **[Sus funciones principales](#sus-funciones-principales)**
 2.  **[2. Gestión de Usuarios de Red (Samba)](#2-gestión-de-usuarios-de-red-samba)**
