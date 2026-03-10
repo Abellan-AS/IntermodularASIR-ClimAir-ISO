@@ -44,10 +44,9 @@ Antes de configurar, verificamos que no existan reglas previas que causen confli
 
 ### 2. Permitir solo lo necesario
 Definimos las excepciones para los servicios configurados en las fases anteriores:
-# Acceso remoto administrativo
+Acceso remoto administrativo
 `sudo ufw allow ssh`
-
-# Protocolos para el servidor de archivos Samba
+Protocolos para el servidor de archivos Samba
 `sudo ufw allow samba`
 ### 3. Activar el Firewall
 Procedemos a activar el servicio. 
