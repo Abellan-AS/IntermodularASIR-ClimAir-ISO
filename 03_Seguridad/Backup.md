@@ -46,19 +46,19 @@ Como tenemos espacio en el LVM, crearemos una carpeta de seguridad:
 
 1. Abrimos el editor: `sudo nano /usr/local/bin/backup_climair.sh`
 2. Montamos este script(Explicación del script al final de la presentación):
-`# Script de Backup para Climair SRV`
-`# Autor: [Alejandro]`
+`# Script de Backup para Climair SRV`  
+`# Autor: [Alejandro]`  
 
-`FECHA=$(date +%Y-%m-%d_%H%M)
-DESTINO="/srv/backups"
-ORIGEN="/srv/climair/facturacion"`
+`FECHA=$(date +%Y-%m-%d_%H%M)  
+DESTINO="/srv/backups"  
+ORIGEN="/srv/climair/facturacion"`  
 
 `echo "Iniciando copia de seguridad de Climair..."`
 
-`# Comprimimos la carpeta de facturación en un archivo .tar.gz
+`# Comprimimos la carpeta de facturación en un archivo .tar.gz  
 tar -czf $DESTINO/backup_facturas_$FECHA.tar.gz $ORIGEN`
 
-`# Borramos copias de más de 7 días para no llenar el disco (Mantenimiento)
+`# Borramos copias de más de 7 días para no llenar el disco (Mantenimiento)  
 find $DESTINO -type f -mtime +7 -name "*.tar.gz" -delete`
 
 `echo "Backup finalizado con éxito en $DESTINO"`
