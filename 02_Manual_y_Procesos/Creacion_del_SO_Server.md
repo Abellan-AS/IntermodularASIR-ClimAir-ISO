@@ -104,7 +104,8 @@ Vamos a crear particiones con LVM para administrar el servidor:
         - `lv_root`: 12 GB (Montado en `/`).
         - `lv_data`: 6 GB (Montado en `/srv`). Aquí van los datos de la empresa, de momento es una empresa pequeña pero dejamos dejamos otros 5GB para poder escalar.
 
-![VirtualBox_Climair-SVR_09_03_2026_19_44_20.png](attachment:4f50efa1-07c0-4fc9-83e4-73a3e8bcd520:VirtualBox_Climair-SVR_09_03_2026_19_44_20.png)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/67cea19c-cd76-4888-b496-39d091c0dcf9" />
+
 
 ### 5.Configuración del Perfil
 
@@ -113,7 +114,8 @@ Vamos a crear particiones con LVM para administrar el servidor:
 - **Username:** `adminclima`
 - **Password:** (definida durante la instalación; no se incluye en la memoria por seguridad).
 
-![VirtualBox_Climair-SVR_09_03_2026_20_07_32.png](attachment:502570ba-b197-447e-88d3-e6ad55adba2f:VirtualBox_Climair-SVR_09_03_2026_20_07_32.png)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/50d95dce-4804-4231-aea4-09c9c1e5f8e5" />
+
 
 ### 6.Configuración de SSH
 
@@ -125,7 +127,8 @@ Queremos  **SSH** para poder gestionar el servidor **remotamente**:
 
 Llegaremos a la pantalla en la que nos pida Reiniciar, dando por finalizada la parte de instalación de nuestro Servidor.
 
-![VirtualBox_Climair-SVR_09_03_2026_20_15_26.png](attachment:024c1f54-c77b-4785-a7fd-9135f8ab4090:VirtualBox_Climair-SVR_09_03_2026_20_15_26.png)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cb21350b-e26b-4f64-ae38-516fd993b80f" />
+
 
 ---
 
@@ -147,7 +150,8 @@ Comprobación básica tras la instalación
 
 </aside>
 
-![45.png](attachment:539e76dd-dbe2-47f3-b34a-56db3e9a5d69:45.png)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/6944e441-ffaa-46c2-99f4-6c924b1a02d9" />
+
 
 ### 8. Actualización del sistema
 
