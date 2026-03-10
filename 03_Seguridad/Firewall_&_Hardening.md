@@ -48,6 +48,9 @@ Acceso remoto administrativo
 `sudo ufw allow ssh`
 Protocolos para el servidor de archivos Samba
 `sudo ufw allow samba`
+
+<img width="528" height="259" alt="Captura de pantalla 2026-03-10 192333" src="https://github.com/user-attachments/assets/2d40bbff-2f84-4f9d-b853-713fc83a9bbe" />
+
 ### 3. Activar el Firewall
 Procedemos a activar el servicio. 
 Nota: Al haber habilitado SSH previamente, no perderemos la conexión actual.
@@ -55,6 +58,9 @@ Nota: Al haber habilitado SSH previamente, no perderemos la conexión actual.
 ### 4. Verificar
 Confirmamos que las reglas se han aplicado correctamente con el modificador verbose para ver el detalle de las políticas:
 `sudo ufw status verbose`
+
+<img width="505" height="313" alt="Captura de pantalla 2026-03-10 192435" src="https://github.com/user-attachments/assets/f2ef0072-e290-48bc-acde-af00f531522c" />
+
 ## B. Hardening de SSH
 El servicio SSH es el vector de ataque más común. Aplicamos técnicas de robustecimiento para mitigar ataques de fuerza bruta y reducir la superficie de exposición.
 ### 1. Copia de seguridad
@@ -71,6 +77,9 @@ Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.
 Reduce el tiempo de espera para un login exitoso (evita DoS).
 `AllowUsersadminclima`
 Lista blanca: solo este usuario tiene permiso de entrada.
+
+<img width="599" height="377" alt="Captura de pantalla 2026-03-10 192502" src="https://github.com/user-attachments/assets/f308b41e-6340-4552-a7c4-37e3b7fa7bb2" />
+
 Aplicación de cambios:
 `sudo nano /etc/ssh/sshd_config`
 ### 3. Verificación de sintaxis
