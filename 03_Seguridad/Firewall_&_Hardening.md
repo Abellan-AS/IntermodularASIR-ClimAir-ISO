@@ -88,6 +88,6 @@ Si no hay salida de error, la sintaxis es correcta.
 
 ### 4. Aplicar cambios y actualizar Firewall
 Reiniciamos para aplicar la nueva política:  
-`sudo systemctl restart ssh`
+`sudo systemctl restart ssh`  
 <img width="405" height="61" alt="Captura de pantalla 2026-03-10 193027" src="https://github.com/user-attachments/assets/0a7720eb-e1bd-41f7-938d-f3d472fac0e5" />
 
