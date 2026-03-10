@@ -58,8 +58,26 @@ Confirmamos que las reglas se han aplicado correctamente con el modificador verb
 ## B. Hardening de SSH
 El servicio SSH es el vector de ataque más común. Aplicamos técnicas de robustecimiento para mitigar ataques de fuerza bruta y reducir la superficie de exposición.
 ### 1. Copia de seguridad
-Siguiendo las mejores prácticas de administración, respaldamos la configuración original:Bashsudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
-2. Edición de seguridadModificamos el archivo /etc/ssh/sshd_config con los siguientes parámetros de seguridad:ParámetroValorObjetivo TécnicoPermitRootLoginnoImpide que el superusuario sea atacado directamente.MaxAuthTries3Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.LoginGraceTime30Reduce el tiempo de espera para un login exitoso (evita DoS).AllowUsersadminclimaLista blanca: solo este usuario tiene permiso de entrada.Aplicación de cambios:Bashsudo nano /etc/ssh/sshd_config
+Siguiendo las mejores prácticas de administración, respaldamos la configuración original:
+`sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak`
+### 2. Edición de seguridad
+Modificamos el archivo /etc/ssh/sshd_config con los siguientes parámetros de seguridad:
+ParámetroValorObjetivo Técnico
+`PermitRootLoginno`
+Impide que el superusuario sea atacado directamente.
+`MaxAuthTries3`
+Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.
+`LoginGraceTime30`
+Reduce el tiempo de espera para un login exitoso (evita DoS).
+`AllowUsersadminclima`
+Lista blanca: solo este usuario tiene permiso de entrada.
+Aplicación de cambios:
+`sudo nano /etc/ssh/sshd_config`
 # [Modificar o añadir las líneas mencionadas arriba]
-3. Verificación de sintaxisAntes de reiniciar el servicio (lo que podría dejarnos fuera del servidor si hay un error), validamos el archivo:Bashsudo sshd -t
-Si no hay salida de error, la sintaxis es correcta.4. Aplicar cambios y actualizar FirewallReiniciamos el demonio para aplicar la nueva política:Bashsudo systemctl restart ssh
+### 3. Verificación de sintaxis
+Antes de reiniciar el servicio (lo que podría dejarnos fuera del servidor si hay un error), validamos el archivo:
+`sudo sshd -t`
+Si no hay salida de error, la sintaxis es correcta.
+### 4. Aplicar cambios y actualizar Firewall
+Reiniciamos para aplicar la nueva política:
+`sudo systemctl restart ssh`
