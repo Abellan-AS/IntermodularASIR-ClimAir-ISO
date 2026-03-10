@@ -35,7 +35,7 @@ Vamos a crear físicamente las carpetas donde la administrativa y los técnicos 
     `sudo mkdir -p /srv/climair/facturacion
     sudo mkdir -p /srv/climair/partes_trabajo`
     
-2. **Verificamos que se han creado:**Bash
+2. **Verificamos que se han creado:**
     
     `ls -l /srv/climair`
     
