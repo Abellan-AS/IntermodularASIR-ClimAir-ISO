@@ -19,18 +19,33 @@ Además nos servirá para después enlazar con los proyectos de las demás asign
 
 ---
 
-<aside>
-🧭
 
-**Índice**
-A. Creación de la Máquina Virtual
-B. Configuración de Red
-C. Instalación de Ubuntu Server
-D. Comprobación básica tras instalación
+
+> [!IMPORTANT]
+> # 🧭 Índice interactivo
+
+### Índice interactivo
+
+**[A. Creación de la Máquina Virtual](#a-creación-de-la-máquina-virtual)**
+
+**[B. Configuración de Red](#b-configuración-de-red)**
+
+**[C. Instalación de Ubuntu Server:](#c-instalación-de-ubuntu-server)**
+
+1.  **[Idioma y Teclado](#1-idioma-y-teclado)**
+2.  **[Tipo de Instalación](#2-tipo-de-instalación)**
+3.  **[Configuración de Red (Importante)](#3-configuración-de-red-importante)**
+4.  **[Almacenamiento](#4-almacenamiento)**
+5.  **[Configuración del Perfil](#5-configuración-del-perfil)**
+6.  **[Configuración de SSH](#6-configuración-de-ssh)**
+
+**[7. Comprobaciones y verificación final](#7-comprobaciones-y-verificación-final)**
+
+**[8. Actualización del sistema](#8-actualización-del-sistema)**
 
 ---
+---
 
-</aside>
 
 ---
 
