@@ -42,7 +42,7 @@ El Firewall es la primera línea de defensa. Implementamos una política de **"D
 Antes de configurar, verificamos que no existan reglas previas que causen conflictos:
 `sudo ufw status`
 
-### 2. Permitir solo lo necesario
+### 2. Permitir solo lo necesariohttps://github.com/Abellan-AS/IntermodularASIR-ClimAir-ISO/blob/main/03_Seguridad/Firewall_%26_Hardening.md
 Definimos las excepciones para los servicios configurados en las fases anteriores:
 Acceso remoto administrativo
 `sudo ufw allow ssh`
@@ -53,10 +53,10 @@ Protocolos para el servidor de archivos Samba
 
 ### 3. Activar el Firewall
 Procedemos a activar el servicio. 
-Nota: Al haber habilitado SSH previamente, no perderemos la conexión actual.
+Nota: Al haber habilitado SSH previamente, no perderemos la conexión actual.  
 `sudo ufw enable`
 ### 4. Verificar
-Confirmamos que las reglas se han aplicado correctamente con el modificador verbose para ver el detalle de las políticas:
+Confirmamos que las reglas se han aplicado correctamente con el modificador verbose para ver el detalle de las políticas:  
 `sudo ufw status verbose`
 
 <img width="505" height="313" alt="Captura de pantalla 2026-03-10 192435" src="https://github.com/user-attachments/assets/f2ef0072-e290-48bc-acde-af00f531522c" />
@@ -64,12 +64,11 @@ Confirmamos que las reglas se han aplicado correctamente con el modificador verb
 ## B. Hardening de SSH
 El servicio SSH es el vector de ataque más común. Aplicamos técnicas de robustecimiento para mitigar ataques de fuerza bruta y reducir la superficie de exposición.
 ### 1. Copia de seguridad
-Siguiendo las mejores prácticas de administración, respaldamos la configuración original:
+Siguiendo las mejores prácticas de administración, respaldamos la configuración original:  
 `sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak`
 ### 2. Edición de seguridad
-Modificamos el archivo /etc/ssh/sshd_config con los siguientes parámetros de seguridad:
-ParámetroValorObjetivo Técnico  
-`PermitRootLoginno`
+Modificamos el archivo /etc/ssh/sshd_config con los siguientes parámetros de seguridad:  
+`PermitRootLoginno`  
 Impide que el superusuario sea atacado directamente.  
 `MaxAuthTries3`  
 Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.  
