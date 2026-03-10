@@ -59,8 +59,8 @@ sudo apt install samba -y`
 `# Sincronizamos a Ana con la base de datos de Samba
 sudo smbpasswd -a ana_admin`
 
-# Si quieres que Pepe también entre a los partes:
-`sudo smbpasswd -a pepe_tecnico`
+`# Si quieres que Pepe también entre a los partes:
+sudo smbpasswd -a pepe_tecnico`
 
 En nuestro caso simulado vamos a poner la misma contraseña que en linux, pero la realidad es asignar contraseñas diferentes a cada usuario.
 
