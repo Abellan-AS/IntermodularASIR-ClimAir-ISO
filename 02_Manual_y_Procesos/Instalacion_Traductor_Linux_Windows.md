@@ -21,8 +21,8 @@ Como ya tenemos los directorios creados, nos ponemos manos a la obra con la inst
 
 ---
 
-<aside>
-🧭  Indice interactivo
+
+> # 🧭 Índice interactivo
 
 1.  **[1. Instalación del Servicio Samba](#1-instalación-del-servicio-samba)**
     * **[Sus funciones principales](#sus-funciones-principales)**
@@ -32,8 +32,6 @@ Como ya tenemos los directorios creados, nos ponemos manos a la obra con la inst
 4.  **[4. ¿Cómo entrar desde Windows?](#4-cómo-entrar-desde-windows)**
 
 ---
-
-</aside>
 
 ---
 
