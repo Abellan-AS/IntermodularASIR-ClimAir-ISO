@@ -42,14 +42,24 @@ El Firewall es la primera línea de defensa. Implementamos una política de **"D
 Antes de configurar, verificamos que no existan reglas previas que causen conflictos:
 `sudo ufw status`
 
-2. Permitir solo lo necesarioDefinimos las excepciones para los servicios configurados en las fases anteriores:Bash# Acceso remoto administrativo
-sudo ufw allow ssh
+### 2. Permitir solo lo necesario
+Definimos las excepciones para los servicios configurados en las fases anteriores:
+# Acceso remoto administrativo
+`sudo ufw allow ssh`
 
 # Protocolos para el servidor de archivos Samba
-sudo ufw allow samba
-3. Activar el FirewallProcedemos a activar el servicio. Nota: Al haber habilitado SSH previamente, no perderemos la conexión actual.Bashsudo ufw enable
-4. VerificarConfirmamos que las reglas se han aplicado correctamente con el modificador verbose para ver el detalle de las políticas:Bashsudo ufw status verbose
-B. Hardening de SSHEl servicio SSH es el vector de ataque más común. Aplicamos técnicas de robustecimiento para mitigar ataques de fuerza bruta y reducir la superficie de exposición.1. Copia de seguridadSiguiendo las mejores prácticas de administración, respaldamos la configuración original:Bashsudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+`sudo ufw allow samba`
+### 3. Activar el Firewall
+Procedemos a activar el servicio. 
+Nota: Al haber habilitado SSH previamente, no perderemos la conexión actual.
+`sudo ufw enable`
+### 4. Verificar
+Confirmamos que las reglas se han aplicado correctamente con el modificador verbose para ver el detalle de las políticas:
+`sudo ufw status verbose`
+## B. Hardening de SSH
+El servicio SSH es el vector de ataque más común. Aplicamos técnicas de robustecimiento para mitigar ataques de fuerza bruta y reducir la superficie de exposición.
+### 1. Copia de seguridad
+Siguiendo las mejores prácticas de administración, respaldamos la configuración original:Bashsudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
 2. Edición de seguridadModificamos el archivo /etc/ssh/sshd_config con los siguientes parámetros de seguridad:ParámetroValorObjetivo TécnicoPermitRootLoginnoImpide que el superusuario sea atacado directamente.MaxAuthTries3Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.LoginGraceTime30Reduce el tiempo de espera para un login exitoso (evita DoS).AllowUsersadminclimaLista blanca: solo este usuario tiene permiso de entrada.Aplicación de cambios:Bashsudo nano /etc/ssh/sshd_config
 # [Modificar o añadir las líneas mencionadas arriba]
 3. Verificación de sintaxisAntes de reiniciar el servicio (lo que podría dejarnos fuera del servidor si hay un error), validamos el archivo:Bashsudo sshd -t
