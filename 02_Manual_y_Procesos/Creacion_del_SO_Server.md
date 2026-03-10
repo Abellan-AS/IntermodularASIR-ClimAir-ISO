@@ -88,7 +88,8 @@ Captura de pantalla (configuración de red)
 
 </aside>
 
-![VirtualBox_Climair-SVR_09_03_2026_19_32_36.png](attachment:b552709b-106b-4016-8499-a260e418166a:VirtualBox_Climair-SVR_09_03_2026_19_32_36.png)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/eeae32ad-97ac-41a8-86fe-5aa9d80b0655" />
+
 
 ### 4. Almacenamiento
 
