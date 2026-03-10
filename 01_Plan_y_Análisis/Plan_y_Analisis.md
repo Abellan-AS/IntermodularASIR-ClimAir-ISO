@@ -13,12 +13,16 @@
 
 </aside>
 
-<aside>
-🧭
-
-**Índice interactivo**
-
-</aside>
+> ### 🧭 Índice interactivo
+> 
+> 0. **[Introducción](#0-introducción)**
+> 1. **[Análisis de necesidades de ClimAir S.L.](#1-análisis-de-necesidades-de-climair-sl)**
+> 2. **[Plan de implantación ejecutado](#2-plan-de-implantación-ejecutado)**
+>    * [Fase I: Cimentación y gestión de almacenamiento (LVM)](#fase-i-cimentación-y-gestión-de-almacenamiento-lvm)
+>    * [Fase II: Control de acceso basado en roles](#fase-ii-control-de-acceso-basado-en-roles)
+>    * [Fase III: Interoperabilidad con Samba](#fase-iii-interoperabilidad-con-samba)
+>    * [Fase IV: Blindaje y automatización](#fase-iv-blindaje-y-automatización)
+> 3. **[Justificación de tecnologías elegidas](#3-justificación-de-tecnologías-elegidas)**
 
 ---
 
