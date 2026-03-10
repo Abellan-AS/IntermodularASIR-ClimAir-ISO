@@ -68,24 +68,25 @@ Siguiendo las mejores prácticas de administración, respaldamos la configuraci�
 `sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak`
 ### 2. Edición de seguridad
 Modificamos el archivo /etc/ssh/sshd_config con los siguientes parámetros de seguridad:
-ParámetroValorObjetivo Técnico
+ParámetroValorObjetivo Técnico  
 `PermitRootLoginno`
-Impide que el superusuario sea atacado directamente.
-`MaxAuthTries3`
-Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.
-`LoginGraceTime30`
-Reduce el tiempo de espera para un login exitoso (evita DoS).
-`AllowUsersadminclima`
-Lista blanca: solo este usuario tiene permiso de entrada.
+Impide que el superusuario sea atacado directamente.  
+`MaxAuthTries3`  
+Mitiga ataques de fuerza bruta al cerrar la conexión tras 3 fallos.  
+`LoginGraceTime30`  
+Reduce el tiempo de espera para un login exitoso (evita DoS).  
+`AllowUsersadminclima`  
+Lista blanca: solo este usuario tiene permiso de entrada.  
 
 <img width="599" height="377" alt="Captura de pantalla 2026-03-10 192502" src="https://github.com/user-attachments/assets/f308b41e-6340-4552-a7c4-37e3b7fa7bb2" />
 
-Aplicación de cambios:
-`sudo nano /etc/ssh/sshd_config`
-### 3. Verificación de sintaxis
-Antes de reiniciar el servicio (lo que podría dejarnos fuera del servidor si hay un error), validamos el archivo:
+Aplicación de cambios:  
+`sudo nano /etc/ssh/sshd_config`  
+### 3. Verificación de sintaxis  
+Antes de reiniciar el servicio (lo que podría dejarnos fuera del servidor si hay un error), validamos el archivo:  
 `sudo sshd -t`
-Si no hay salida de error, la sintaxis es correcta.
+Si no hay salida de error, la sintaxis es correcta.  
+
 ### 4. Aplicar cambios y actualizar Firewall
-Reiniciamos para aplicar la nueva política:
+Reiniciamos para aplicar la nueva política:  
 `sudo systemctl restart ssh`
