@@ -23,10 +23,10 @@ Además nos servirá para después enlazar con los proyectos de las demás asign
 🧭
 
 # **Índice**
-# A. Creación de la Máquina Virtual
-# B. Configuración de Red
-# C. Instalación de Ubuntu Server
-# D. Comprobación básica tras instalación
+A. Creación de la Máquina Virtual
+B. Configuración de Red
+C. Instalación de Ubuntu Server
+D. Comprobación básica tras instalación
 
 ---
 
