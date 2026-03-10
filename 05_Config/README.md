@@ -1,0 +1,1 @@
+Esta carpeta contiene los extractos de configuración técnica aplicados en el servidor Clima-SRV. Estos archivos reflejan la implementación de políticas de seguridad ISO 27001, el endurecimiento del servicio SSH y la gestión de recursos compartidos mediante Samba.

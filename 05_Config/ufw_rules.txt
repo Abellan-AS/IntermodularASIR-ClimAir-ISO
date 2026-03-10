@@ -1,0 +1,11 @@
+Estado del Firewall UFW (Clima-SRV) 
+-------------------------------------------
+Status: active 
+Logging: on (low) 
+Default: deny (incoming), allow (outgoing) 
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere (SSH) 
+137,138/udp (Samba)        ALLOW IN    Anywhere 
+139,445/tcp (Samba)        ALLOW IN    Anywhere 
