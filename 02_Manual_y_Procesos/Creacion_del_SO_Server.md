@@ -22,7 +22,7 @@ Además nos servirá para después enlazar con los proyectos de las demás asign
 <aside>
 🧭
 
-# **Índice**
+**Índice**
 A. Creación de la Máquina Virtual
 B. Configuración de Red
 C. Instalación de Ubuntu Server
