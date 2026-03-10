@@ -22,8 +22,6 @@ Además nos servirá para después enlazar con los proyectos de las demás asign
 
 > # 🧭 Índice interactivo
 
-### Índice interactivo
-
 **[A. Creación de la Máquina Virtual](#a-creación-de-la-máquina-virtual)**
 
 **[B. Configuración de Red](#b-configuración-de-red)**
