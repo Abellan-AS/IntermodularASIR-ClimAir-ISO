@@ -52,10 +52,10 @@ sudo apt install samba -y`
 **Samba gestiona su propia base de datos de contraseñas**. Aunque el usuario exista en Linux, hay que darle de alta en Samba.
 
 `# Sincronizamos a Ana con la base de datos de Samba
-sudo smbpasswd -a ana_admin
+sudo smbpasswd -a ana_admin`
 
 # Si quieres que Pepe también entre a los partes:
-sudo smbpasswd -a pepe_tecnico`
+`sudo smbpasswd -a pepe_tecnico`
 
 En nuestro caso simulado vamos a poner la misma contraseña que en linux, pero la realidad es asignar contraseñas diferentes a cada usuario.
 
