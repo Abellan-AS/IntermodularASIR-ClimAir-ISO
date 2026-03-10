@@ -64,7 +64,7 @@ Utilizaremos el comando `useradd` con los flags adecuados para que tengan su car
 
 (`-m`) y su terminal por defecto (`-s`).
 
-`# Creamos a Ana (Administrativa)
+` # Creamos a Ana (Administrativa)
 sudo useradd -m -s /bin/bash ana_admin
 # Creamos a Pepe (Técnico de campo)
 sudo useradd -m -s /bin/bash pepe_tecnico`
