@@ -84,7 +84,7 @@ sudo usermod -aG tecnicos pepe_tecnico`
 
 Y con el comando `grep -E 'administracion|tecnicos' /etc/group` podemos ver los grupos y quien pertenece a cada uno, es una prueba de que la estructura está bien.
 
-![48.png](attachment:bee98ff6-fd58-4702-ba30-d8e9eb3837b5:48.png)
+<img width="567" height="143" alt="image" src="https://github.com/user-attachments/assets/c73552c4-84d4-41d3-a7a0-67df4b5ce9b8" />
 
 ---
 
@@ -113,7 +113,8 @@ Y le vamos a meter un Sticky Bit, para que no haya borrados accidentales para qu
 
 `sudo chmod +t /srv/climair/partes_trabajo`
 
-![49.png](attachment:312668b3-7950-4306-b6cb-bcf4bd6ec8ca:49.png)
+<img width="695" height="142" alt="image" src="https://github.com/user-attachments/assets/1443c1c4-aa8d-42fb-b184-7407859be299" />
+
 
 ### 3. Verificación Final
 
@@ -122,3 +123,6 @@ Para comprobar que todo está perfecto, usamos el comando:
 `ls -la /srv/climair`
 
 Y comprobamos los permisos RWX que tiene cada uno, incluso la T de los técnicos
+
+<img width="532" height="124" alt="image" src="https://github.com/user-attachments/assets/714d6352-e17c-472f-961a-dfb01cd8257c" />
+
