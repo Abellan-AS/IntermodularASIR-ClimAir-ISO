@@ -25,7 +25,7 @@ find $DESTINO -type f -mtime +7 -name "*.tar.gz" -delete [cite: 854, 865, 929, 9
 echo "Backup finalizado con éxito en $DESTINO" [cite: 855, 866, 874]
 
 #NOTAS!! 
-# Permisos: Es fundamental otorgar permisos de ejecución con sudo chmod +x /usr/local/bin/backup_climair.sh.
+#Permisos: Es fundamental otorgar permisos de ejecución con sudo chmod +x /usr/local/bin/backup_climair.sh.
 
 #Programación (Cron): El script está diseñado para ejecutarse diariamente a las 03:00 AM mediante la siguiente línea en el crontab de root:00 03 * * * /usr/local/bin/backup_climair.sh >> /var/log/backup_climair.log 2>&1.
 
