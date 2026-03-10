@@ -40,7 +40,8 @@ Vamos a crear físicamente las carpetas donde la administrativa y los técnicos 
     `ls -l /srv/climair`
     
 
-![46.png](attachment:08ca4023-1f5c-406f-80d4-64c055bf0ee3:46.png)
+<img width="561" height="111" alt="image" src="https://github.com/user-attachments/assets/e2469163-308f-48da-9ea8-74da96a4a842" />
+
 
 ---
 
@@ -73,7 +74,7 @@ sudo useradd -m -s /bin/bash pepe_tecnico`
 `sudo passwd ana_admin      # Ponle por ej: ClimaAna26*
 sudo passwd pepe_tecnico   # Ponle por ej: ClimaPepe26*`
 
-![47.png](attachment:37ca8157-8eb5-4832-ae34-60a67cdf9bd1:47.png)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/cc602bce-b82d-49da-8011-954bade822c1" />
 
 ### 4. Metemos a cada uno en su grupo:
 
