@@ -22,9 +22,18 @@ Como ya tenemos los directorios creados, nos ponemos manos a la obra con la inst
 ---
 
 <aside>
-🧭
+> # 🧭 Indice interactivo
 
-# **Índice interactivo**
+### <u>Índice interactivo</u>
+
+1.  **[1. Instalación del Servicio Samba](#1-instalación-del-servicio-samba)**
+    * **[Sus funciones principales](#sus-funciones-principales)**
+2.  **[2. Gestión de Usuarios de Red (Samba)](#2-gestión-de-usuarios-de-red-samba)**
+3.  **[3. Configuración del Recurso Compartido (smb.conf)](#3-configuración-del-recurso-compartido-smbconf)**
+    * **[3. Aplicar los cambios (Reiniciar el servicio)](#3-aplicar-los-cambios-reiniciar-el-servicio)**
+4.  **[4. ¿Cómo entrar desde Windows?](#4-cómo-entrar-desde-windows)**
+
+---
 
 </aside>
 
